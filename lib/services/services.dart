@@ -1,6 +1,6 @@
 import 'package:http/http.dart' as http;
 
-import 'model.dart';
+import '../../model.dart';
 
 class Services {
    Future<List<PostModel>?> getPost () async{

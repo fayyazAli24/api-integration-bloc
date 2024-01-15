@@ -1,28 +1,15 @@
 
-import 'package:api_integration_bloc/services.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import 'bloc/cubit/cubit.dart';
+import 'bloc/cubit/postCubit.dart';
 
-class HomePage extends StatefulWidget {
+class HomePage extends StatelessWidget {
   const HomePage({super.key});
 
   @override
-  State<HomePage> createState() => _HomePageState();
-}
 
-class _HomePageState extends State<HomePage> {
-  @override
-  void initState() {
-    // TODO: implement initState
-    Services services;
-    final todoCubit = context.read<TodoCubit>();
-    todoCubit.getPost();
-
-    super.initState();
-  }
 
   @override
   Widget build(BuildContext context) {

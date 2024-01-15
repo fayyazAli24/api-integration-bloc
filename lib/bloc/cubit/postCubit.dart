@@ -1,8 +1,9 @@
 import 'package:api_integration_bloc/model.dart';
-import 'package:api_integration_bloc/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-part '../states/state.dart';
+import '../../services/services.dart';
+
+part '../states/postState.dart';
 
 class TodoCubit extends Cubit<TodoState> {
   // final Services services;
