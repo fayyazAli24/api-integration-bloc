@@ -2,13 +2,14 @@ import 'package:api_integration_bloc/model.dart';
 import 'package:api_integration_bloc/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-part "state.dart";
+part '../states/state.dart';
 
 class TodoCubit extends Cubit<TodoState> {
   // final Services services;
   TodoCubit() : super(InitialState()) {
     getPost();
   }
+
 
 
   Future<List<PostModel>?> getPost() async {
@@ -21,6 +22,7 @@ class TodoCubit extends Cubit<TodoState> {
         return result;
       } else {
         print("the response is null");
+
         return null;
       }
     } catch (e) {

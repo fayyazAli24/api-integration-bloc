@@ -11,7 +11,7 @@ class Services {
       return postModelFromJson(jsonString);
 
     }else{
-      throw Exception("error occured data not fetched");
+      throw Exception("error occurred data not fetched");
     }
   }
 }

@@ -1,4 +1,4 @@
-part of "cubit.dart";
+part of '../cubit/cubit.dart';
 
 sealed class TodoState {}
 

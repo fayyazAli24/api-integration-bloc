@@ -1,8 +1,9 @@
-import 'package:api_integration_bloc/cubit.dart';
+
 import 'package:api_integration_bloc/services.dart';
 import 'package:flutter/material.dart';
 import "package:flutter_bloc/flutter_bloc.dart";
 
+import 'bloc/cubit/cubit.dart';
 import 'homePage.dart';
 
 void main() {
